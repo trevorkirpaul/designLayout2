@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  padding: 50px; }
+  header .logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav ul {
+      list-style: none;
+      margin-top: 30px; }
+      header nav ul li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 80%;
+        letter-spacing: 2px;
+        padding-left: 10px;
+        display: inline-block;
+        text-transform: uppercase; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #474747; }
+
+.hero {
+  padding: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #474747; }
+  .hero h1 {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 450%;
+    font-weight: 700; }
+  .hero .subText {
+    margin-top: 75px; }
+    .hero .subText .left {
+      float: left;
+      line-height: 35px;
+      font-weight: 300;
+      letter-spacing: 2px; }
+      .hero .subText .left::before {
+        content: "+ ";
+        font-weight: 700;
+        color: #4587a3; }
+    .hero .subText .right {
+      float: right; }
+      .hero .subText .right p {
+        margin-bottom: 25px; }
+      .hero .subText .right h2 {
+        color: #4587a3;
+        line-height: 35px;
+        font-family: serif;
+        font-weight: 300; }
+  .hero::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.displayArea {
+  margin-top: 45px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "one two" "three two";
+  margin-bottom: 400px; }
+  .displayArea .panelOne {
+    grid-area: one;
+    width: 90%;
+    height: 340px;
+    margin: 0 auto;
+    background-image: url("../img/desk.jpeg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative; }
+    .displayArea .panelOne .card {
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      width: 75%;
+      margin: auto;
+      opacity: 0;
+      transition: 0.4s;
+      font-family: "Roboto", sans-serif;
+      color: #474747; }
+      .displayArea .panelOne .card span {
+        font-weight: 300; }
+      .displayArea .panelOne .card h2 {
+        font-size: 250%;
+        text-transform: uppercase;
+        margin-top: 8px; }
+    .displayArea .panelOne:hover .card {
+      opacity: 1; }
+  .displayArea .panelTwo {
+    grid-area: two;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("../img/pantone.jpeg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative; }
+    .displayArea .panelTwo .card {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 10%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      width: 75%;
+      margin: auto;
+      opacity: 0;
+      transition: 0.4s;
+      font-family: "Roboto", sans-serif;
+      color: #474747; }
+      .displayArea .panelTwo .card span {
+        font-weight: 300; }
+      .displayArea .panelTwo .card h2 {
+        font-size: 250%;
+        text-transform: uppercase;
+        margin-top: 8px; }
+    .displayArea .panelTwo:hover .card {
+      opacity: 1; }
+  .displayArea .panelThree {
+    grid-area: three;
+    width: 90%;
+    height: 340px;
+    margin: 45px auto 0 auto;
+    background-image: url("../img/cup.jpeg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative; }
+    .displayArea .panelThree .card {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 10%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      width: 75%;
+      margin: auto;
+      opacity: 0;
+      transition: 0.4s;
+      font-family: "Roboto", sans-serif;
+      color: #474747; }
+      .displayArea .panelThree .card span {
+        font-weight: 300; }
+      .displayArea .panelThree .card h2 {
+        font-size: 250%;
+        text-transform: uppercase;
+        margin-top: 8px; }
+    .displayArea .panelThree:hover .card {
+      opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
