@@ -35,7 +35,10 @@ header {
         text-transform: uppercase; }
         header nav ul li a {
           text-decoration: none;
-          color: #474747; }
+          color: #474747;
+          padding: 5px; }
+          header nav ul li a:hover {
+            color: #4587a3; }
 
 .hero {
   padding: 25px;
@@ -73,11 +76,11 @@ header {
 
 .displayArea {
   margin-top: 45px;
+  margin-bottom: 400px;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "one two" "three two";
-  margin-bottom: 400px; }
+  grid-template-areas: "one two" "three two"; }
   .displayArea .panelOne {
     grid-area: one;
     width: 90%;
@@ -171,5 +174,63 @@ header {
         margin-top: 8px; }
     .displayArea .panelThree:hover .card {
       opacity: 1; }
+
+.formArea {
+  margin-top: 75px;
+  padding: 50px;
+  background-color: #e2e2e2;
+  margin-bottom: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "formHelp form"; }
+  .formArea form {
+    grid-area: form; }
+    .formArea form label {
+      display: inline-block;
+      font-family: "Roboto", sans-serif;
+      color: #4587a3;
+      margin-bottom: 5px; }
+    .formArea form input {
+      border: 1px solid #4587a3;
+      background-color: #f9f9f9;
+      padding: 5px;
+      width: 95%;
+      margin-bottom: 25px;
+      color: #474747;
+      font-family: "Roboto", sans-serif; }
+    .formArea form textarea {
+      border: 1px solid #4587a3;
+      background-color: #f9f9f9;
+      width: 95%;
+      height: 250px;
+      resize: none;
+      margin-bottom: 15px;
+      padding: 5px;
+      color: #474747;
+      font-family: "Roboto", sans-serif; }
+    .formArea form button {
+      border: none;
+      background-color: #4587a3;
+      color: #f9f9f9;
+      width: 150px;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      float: right;
+      margin-right: 5%; }
+      .formArea form button:hover {
+        background-color: #474747; }
+  .formArea .formHelp {
+    grid-area: formHelp;
+    font-family: "Roboto", sans-serif;
+    color: #474747;
+    padding: 0px;
+    width: 75%; }
+    .formArea .formHelp h2 {
+      margin-bottom: 25px; }
+    .formArea .formHelp p {
+      font-weight: 300;
+      line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
 $white: #f9f9f9
 $black: #474747
 $blue: #4587a3
+$grey: #e2e2e2
 $font: 'Roboto', sans-serif
 * 
 	padding: 0
@@ -47,6 +48,11 @@ header
 				a
 					text-decoration: none
 					color: $black
+					padding: 5px
+
+					&:hover
+						color: $blue
+
 
 .hero
 	padding: 25px
@@ -90,6 +96,7 @@ header
 
 .displayArea
 	margin-top: 45px
+	margin-bottom: 400px //styling purposes, delete lateer
 	padding: 0
 	display: grid
 	grid-template-columns: 1fr 1fr
@@ -221,4 +228,74 @@ header
 
 
 
-	margin-bottom: 400px
+
+
+.formArea
+	margin-top: 75px
+	padding: 50px
+
+	background-color: $grey
+
+	margin-bottom: 400px //for styling, delete later
+
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "formHelp form"
+
+	//begin form
+	form
+		grid-area: form
+
+
+		label
+			display: inline-block
+			font-family: $font
+			color: $blue
+			margin-bottom: 5px
+
+		input
+			border: 1px solid $blue
+			background-color: $white
+			padding: 5px
+			width: 95%
+			margin-bottom: 25px
+			color: $black
+			font-family: $font
+
+
+		textarea
+			border: 1px solid $blue
+			background-color: $white
+			width: 95%
+			height: 250px
+			resize: none
+			margin-bottom: 15px
+			padding: 5px
+			color: $black
+			font-family: $font
+		button
+			border: none
+			background-color: $blue
+			color: $white
+			width: 150px
+			padding: 10px
+			font-family: $font
+			font-weight: 500
+			cursor: pointer
+			float: right
+			margin-right: 5%
+			&:hover
+				background-color: $black
+
+	.formHelp
+		grid-area: formHelp
+		font-family: $font
+		color: $black
+		padding: 0px
+		width: 75%
+
+		h2
+			margin-bottom: 25px
+		p
+			font-weight: 300
+			line-height: 25px
